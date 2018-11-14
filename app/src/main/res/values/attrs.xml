@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--圆形-->
+    <declare-styleable name="MyCircleProgress">
+        <attr name="progress_type" format="enum">
+            <enum name="type_rect" value="0" />
+            <enum name="type_circle" value="1" />
+        </attr>
+        <attr name="circleBg" format="color" /><!--背景圆颜色-->
+        <attr name="progressColor" format="color" /><!--进度条颜色-->
+        <attr name="progressMax" format="integer" /><!--最大值-->
+        <attr name="progressValue" format="integer" /><!--初始值-->
+        <attr name="progressWidth" format="dimension" /><!--进度条大小-->
+        <attr name="progressRoundCap" format="boolean" /><!--进度条是否为圆头-->
+        <attr name="android:textSize" />
+        <attr name="android:textColor" />
+    </declare-styleable>
+
+    <!--倒计时-->
+    <declare-styleable name="CountDownView">
+        <!--显示时长-->
+        <attr name="duration" format="integer" />
+        <!--内容文字-->
+        <attr name="android:text" />
+        <!--字体大小-->
+        <attr name="android:textSize" />
+        <!--字体颜色-->
+        <attr name="android:textColor" />
+        <!--行字体长度，用作分割文本的依据。-->
+        <attr name="lineTextLength" format="integer" />
+        <!--背景颜色-->
+        <attr name="backgroundColor" format="color" />
+        <!--当前进度-->
+        <attr name="progress" format="float" />
+        <!--进度条宽度-->
+        <attr name="progressBarWidth" format="dimension" />
+        <!--进度条颜色-->
+        <attr name="progressBarColor" format="color" />
+        <!--进度条模式-->
+        <attr name="progressBarMode">
+            <!--顺时针从无到有-->
+            <enum name="clockwiseFromNothing" value="0x02" />
+            <!--顺时针从有到无-->
+            <enum name="clockwiseFromExist" value="0x03" />
+            <!--逆时针从无到有-->
+            <enum name="anticlockwiseFromNothing" value="0x00" />
+            <!--逆时针从有到无-->
+            <enum name="anticlockwiseFromExist" value="0x01" />
+        </attr>
+    </declare-styleable>
+</resources>

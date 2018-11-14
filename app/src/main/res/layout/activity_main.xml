@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.itedu.mycustomview.MyMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.itedu.mycustomview.weight.CountDownView
+            android:id="@+id/countDownView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="跳过广告"
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            app:duration="5000"
+            app:lineTextLength="2"
+            app:progressBarColor="@color/colorPrimary"
+            app:progressBarMode="clockwiseFromExist"
+            app:progressBarWidth="2dp" />
+
+        <com.itedu.mycustomview.weight.CountdownTimeView
+            android:layout_width="wrap_content"
+            android:id="@+id/fs"
+            android:layout_height="wrap_content"
+            android:onClick="countdowntime"
+            android:padding="10dp"
+            android:text="发送验证码" />
+    </LinearLayout>
+
+
+    <com.itedu.mycustomview.weight.CustomCircleView
+        android:id="@+id/circle_rect"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_margin="20dp"
+        app:progressColor="@color/colorPrimary"
+        app:progressWidth="5dp"
+        app:progress_type="type_rect" />
+
+
+    <com.itedu.mycustomview.weight.CustomCircleView
+        android:id="@+id/circle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:progressColor="@color/colorPrimary"
+        app:progressRoundCap="true"
+        app:progressWidth="5dp"
+        app:progress_type="type_circle" />
+
+    <com.itedu.mycustomview.weight.CustomCircleView
+        android:id="@+id/circle2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:progressColor="@color/colorPrimary"
+        app:progressRoundCap="false"
+        app:progressWidth="5dp"
+        app:progress_type="type_circle" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:onClick="startPlay"
+        android:text="开始" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:onClick="reset"
+        android:text="重置" />
+
+
+
+</LinearLayout>
