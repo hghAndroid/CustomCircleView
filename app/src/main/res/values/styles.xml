@@ -8,4 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <!--选项样式-->
+    <declare-styleable name="OptionView">
+        <attr name="option_background" format="reference|integer" />
+        <attr name="option_left_ImageView_drawable" format="reference|integer" />
+        <attr name="option_right_ImageView_drawable" format="reference|integer" />
+        <attr name="option_title_text" format="string" />
+        <attr name="option_title_text_color" format="color" />
+    </declare-styleable>
+
 </resources>

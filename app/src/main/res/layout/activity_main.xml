@@ -2,11 +2,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.itedu.mycustomview.MyMainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/main_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="startPlay"
+            android:text="开始" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="reset"
+            android:text="重置" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="onClickJump"
+            android:text="跳转" />
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,8 +58,8 @@
             app:progressBarWidth="2dp" />
 
         <com.itedu.mycustomview.weight.CountdownTimeView
-            android:layout_width="wrap_content"
             android:id="@+id/fs"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="countdowntime"
             android:padding="10dp"
@@ -57,6 +88,16 @@
         app:progressWidth="5dp"
         app:progress_type="type_circle" />
 
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="rocket.json"
+        app:lottie_loop="true" />
+
     <com.itedu.mycustomview.weight.CustomCircleView
         android:id="@+id/circle2"
         android:layout_width="80dp"
@@ -68,25 +109,6 @@
         app:progressWidth="5dp"
         app:progress_type="type_circle" />
 
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:onClick="startPlay"
-        android:text="开始" />
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:onClick="reset"
-        android:text="重置" />
 
 
 

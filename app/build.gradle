@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -30,14 +29,15 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
-    implementation "android.arch.navigation:navigation-fragment:1.0.0-alpha07"
-    implementation "android.arch.navigation:navigation-ui:1.0.0-alpha07"
-
-
+    implementation 'android.arch.navigation:navigation-fragment:1.0.0-alpha07'
+    implementation 'android.arch.navigation:navigation-ui:1.0.0-alpha07'
     implementation 'com.orhanobut:logger:1.15'
     implementation 'com.zhy:percent-support-extends:1.1.1'
     implementation 'com.balysv:material-ripple:1.0.2'
-
     implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
+    implementation 'com.airbnb.android:lottie:2.7.0'
+    implementation project(':xtablayoutlibrary')
 }

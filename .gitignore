@@ -17,3 +17,4 @@ out
 gen
 libs/
 src/main/res/navigation/
+.gitignore
